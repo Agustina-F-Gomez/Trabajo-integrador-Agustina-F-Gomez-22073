@@ -1,0 +1,422 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+#reseña-body{
+    display: flex;
+    justify-content: center;
+    background-image: url("imagenes/libros.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.container{
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Container-Principal{
+    background-image: url("imagenes/fondo-hojas.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content:space-around; 
+    background: antiquewhite;
+    box-sizing: border-box;  
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+}
+
+nav:hover{
+    background-color: snow;
+}
+nav img{
+    width: 50px;
+    height: 50px;
+}
+nav a{
+    text-decoration: none;
+    padding: 15px;
+    display:inline-block;
+}
+nav a:hover{
+    background-color:antiquewhite;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    padding: 15px;
+    background-color: rgb(158, 168, 81);
+    transition: background-color 2s;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+}
+
+header h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+header:hover{
+	background-color: rgb(249, 200, 108);
+}
+
+.menu_Principal{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Tarjeta-presentacion{
+    border: 3px solid brown;
+    border-radius: 10px 0px 39px 22px;;
+    width: 250px;
+    height: 350px;
+    margin: 20 px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 10px;
+    background-color: antiquewhite;
+    transition: border 1s,background-color 1s;
+    -webkit-transition: border 1s,background-color 1s;
+    -moz-transition: border 1s,background-color 1s;
+    -o-transition: border 1s,background-color 1s;
+}
+
+.Tarjeta-presentacion:hover{
+    width: 260px;
+    height: 375px;
+    margin: 15px;
+    border: 4px solid rgb(158,168,81);
+	box-shadow: 2px 2px 6px rgba(0,0,0,.8);
+	-webkit-box-shadow: 2px 2px 6px rgba(0,0,0,.8);
+    background-color: brown;
+}
+
+.Tarjeta-presentacion h3{
+    width: 175px;
+    height: 50px;
+    align-self: center;
+    text-align: center;
+}
+
+.Tarjeta-presentacion a{
+    text-decoration: none;
+    padding: 7px 15px;
+    align-self: center;
+    background-color: rgb(158,168,81);
+    margin: 5px;
+}
+.Tarjeta-presentacion a:hover{
+    background-color: antiquewhite;
+}
+
+.Tarjeta-presentacion img{
+    width: 100%;
+    height: 50%;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    margin-top: 25px;
+} 
+
+footer div{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+footer h2{
+    color: brown;
+    margin: 20px;
+}
+
+footer img {
+    width: 70px;
+    height: 70px;
+}
+
+.contenedor{
+    width: 90%;
+    background-image: url("imagenes/libro-abierto-mariposas-768x512.webp");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+form label{
+	width: 100px;
+    font-family: cursive;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width: 100%;
+	padding:8px 16px;
+	margin-top:16px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:antiquewhite;
+	background-color:#000;
+}
+
+form input[type="reset"]{
+	width: 100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:antiquewhite;
+	background-color:#000;
+}
+
+.contenedor_Deb{
+    width: 95%;
+    height: 100%;
+    background-image: url("imagenes/fondo-Aside.jpg");
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#publicaciones{
+    width: 70%;
+    height: 90%; 
+    border: 1px brown;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.post{
+    width: 95%;
+    height: 25%;
+    padding: 5px;
+    border-radius: 10px;
+    border-left-width: 5px;
+    border-left-style:solid;
+    box-shadow: 0px 0px 15px #000;
+    margin-bottom: 25px;
+}
+
+#Los-Juegos{
+    background: rgb(255, 246, 234);
+    border-color: rebeccapurple;
+    color: rebeccapurple;
+}
+
+#El-Hobbit{
+    background: rgb(225, 222, 222);
+    border-color: rgb(158,168,81);
+    color: rgb(158,168,81);
+}
+
+#Orgullo-y-prejuicio{
+    background-color: snow;
+    border-color:rgb(233, 102, 102);
+    color: rgb(233, 102, 102);
+}
+
+#La-chica-del-tren{
+    background-color: snow;
+    border-color: rgb(43, 57, 116);
+    color: rgb(43, 57, 116);
+}
+
+#publicaciones .datos-publicaciones{
+    font-family: 'calibri light';
+    color: black;
+}
+
+#publicaciones .enlace-post{
+    text-align: center;
+}
+
+#publicaciones .num-comentarios{
+    background: #000;
+    color: snow;
+    border: 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+    margin: 3px;
+}
+
+#publicaciones .Ver-mas{
+    background: #000;
+    color: snow;
+    border: 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+    margin: 3px;
+}
+
+.genero{
+    border-radius: 10px;
+    width: 25%;
+    border: 3px solid darkblue;
+    height: 27%; 
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px #000;
+    background-image: url(imagenes/fondo-Aside-2.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+.encabezado{
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    color:darkblue;
+}
+
+.enlace-sidebar{
+    width: 97%;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid antiquewhite;
+    padding: 10px 5px;
+}
+
+#Accion:hover{
+    background: rgb(252, 4, 4);
+}
+
+#Romance:hover{
+    background: rgb(233, 102, 102);
+}
+
+#Misterio:hover{
+    background:rgb(43, 57, 116);
+    color: snow;
+}
+
+#Comedia:hover{
+    background: orange;
+}
+
+#Fantasia:hover{
+    background: rgb(158, 168, 81);
+}
+
+#Ciencia-Ficcion:hover{
+    background: rebeccapurple;
+    color: snow;
+}
+
+.Libro{
+    width: 95%;
+    height: auto;
+    padding: 5px;
+    background-color: antiquewhite;
+    border-style:solid;
+    border-width: 5px;
+    border-color: rgb(158,168,81);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #000;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.datos-libros{
+    font-family: 'calibri light';
+    color: rgb(158,168,81);
+}
+
+.enlace-libro{
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+#menu_pricipal-libro{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Libro:hover{
+    width: 100%;
+    margin: 25px;
+	box-shadow: 2px 2px 15px rgba(0,0,0,.8);
+	-webkit-box-shadow: 2px 2px 15px rgba(0,0,0,.8);
+    -moz-box-shadow: 2px 2px 15px rgba(0,0,0,.8);
+    -o-box-shadow: 2px 2px 15px rgba(0,0,0,.8);
+}
+
+@media screen and (max-width: 800px){
+    .contenedor{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .genero{
+        width: 50%;
+    }
+    .contenedor_Deb{
+        width: 100%;
+    }
+    #publicaciones{
+        width:95%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .contenedor{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .contenedor_Deb{
+        width: 100%;
+    }
+    #publicaciones{
+        width: 95%;
+    }
+    .genero{
+        display: none;
+    }
+}

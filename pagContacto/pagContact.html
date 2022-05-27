@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width,user-scalable=0, initial-scale=1">
+    <title>El club de las mil hojas</title>
+    <style>
+        h1,input,h2,a  { font-family: 'Fredericka the Great', cursive;}
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <nav>
+            <img src="../imagenes/open-book-2866210_640-620x496-1.jpg" alt="Logo">
+            <strong>
+                <a href="../index.html" style="color:black;">Pagina inicial</a>
+            </strong>
+        </nav>
+        <h1> Formulario de contacto</h1>
+        <br><br>
+        <section>
+            <div>
+            <form action="mailto:agusflopigomez@gmail.com" method="post" enctype="text/plain" onsubmit="return validacion();">
+                <label for="Nombre">Nombre: </label> <input type="text" name="Nombre" id="Nombre" size="30" maxlength="100"placeholder="Ingrese su nombre aqui..."><br><br>
+                <label for="Apellido">Apellido: </label> <input type="text" name="Apellido" id="Apellido" size="30" maxlength="100" placeholder="Ingrese su apellido aqui..."><br><br>
+                <label for="mail">Email: </label><input type="email" name="mail" id="mail"size="30" maxlength="100" placeholder="Ingrese su mail aqui..."><br><br>
+                <label for="motivos">Motivo de su contacto: </label>
+                    <select id="motivos" name="motivos">
+                        <option value=" ">[seleccione una opción]</option>
+                        <option value="1">Consulta</option>
+                        <option value="2">Propuesta de un libro</option>
+                        <option value="3">Queja sobre algun usuario</option>
+                    </select>
+                <br><br>
+                <label for="comentarios">Comentarios:</label>  <textarea name="comentarios" id="comentarios" rows="10" cols="30"></textarea><br><br>
+                <input type="submit" value="Enviar formulario">
+                <input type="Reset" value="Borrar todo"><br><br>
+            </form>
+            </div>
+            <script>
+                function validacion() 
+                {
+                    indice = document.getElementById("motivos").selectedIndex;
+                    valorN = document.getElementById("Nombre").value;
+                    valorA = document.getElementById("Apellido").value;
+                    valorC = document.getElementById("comentarios").value;
+                    valorM=document.getElementById("mail").value;
+                    if(valorN == null || valorN.length == 0){
+                        alert("Por favor, Ingrese su nombre!")
+                        elemento = document.getElementById('Nombre');
+                        elemento.focus();
+                        return false
+                    }else if(valorA == null || valorA.length == 0){
+                        alert("Por favor, Ingrese su Apellido!")
+                        elemento = document.getElementById('Apellido');
+                        elemento.focus();
+                        return false
+                    }else if(valorM== null || valorM.length==0){
+                        alert("Por favor, Ingresesu mail!")
+                        elemento=document.getElementById('mail');
+                        elemento.focus();
+                        return false
+                    }else if(indice == null || indice == 0){
+                        alert("Por favor, seleccione una opción válida");
+                        elemento = document.getElementById('motivos');
+                        elemento.focus();
+                        return false;
+                    }else if(valorC == null || valorC.length == 0){
+                        alert("Por favor, Ingrese su comentario!")
+                        elemento = document.getElementById('comentarios');
+                        elemento.focus();
+                        return false
+                    }
+                    
+                    return true;          
+                }
+            </script>
+        </section>
+        <footer>
+            <div>
+                <img src="../imagenes/open-book-2866210_640-620x496-1.jpg" alt="Logo_inf">
+                <h2>Gracias por ser parte de esta experiencia</h2>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
